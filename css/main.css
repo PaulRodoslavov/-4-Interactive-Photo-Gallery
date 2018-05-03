@@ -1,6 +1,7 @@
 *{
 	box-sizing: border-box;
 }
+/* Containers ------------ */
 
 .container{
 	width: 90%;
@@ -9,9 +10,15 @@
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
+/* Photos ------------ */
+
 .gallery img{
 	margin: 30px;
 }
+
+/* Input_search ------------ */
+
 .input{
 	margin: 20px auto;
 	width: 200px;
@@ -27,6 +34,15 @@
 input::placeholder { 
     color: #adb2b7;
     font-style: italic;
+}
+
+/* Lightbox ------------ */
+
+.lb-data .lb-details{
+	margin-top: 35px;
+    text-align: center;
+    width: 100%;
+
 }
 @media(min-width: 576px){
 	.input{
