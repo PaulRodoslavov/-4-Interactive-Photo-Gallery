@@ -42,7 +42,12 @@ input::placeholder {
 	margin-top: 35px;
     text-align: center;
     width: 100%;
-
+}
+.lb-data .lb-close{
+	display: none;
+}
+.lightbox .lb-image{
+	border: none;
 }
 @media(min-width: 576px){
 	.input{
