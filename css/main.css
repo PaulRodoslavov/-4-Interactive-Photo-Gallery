@@ -35,17 +35,18 @@
 }
 
 .gallery img{
-	margin: 30px;	
+	
 }
 .wrap-img{
 	position: relative;
+	margin: 30px;	
 }
 .olo {
 	display: block;
     position: absolute;
     color: #222;
-    bottom: 1px;
-    left: 30px;
+    bottom: -33px;
+    left: 0;
     font-family: 'Nanum Gothic', sans-serif;
 
 }
@@ -92,9 +93,7 @@ input::placeholder {
 	.input{
 		width: 400px;
 	}
-	.gallery img{
-	margin: 30px;
-	}
+	
 }
 
 
