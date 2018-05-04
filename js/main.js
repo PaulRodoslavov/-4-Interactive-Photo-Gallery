@@ -2,7 +2,7 @@ lightbox.option({
       'wrapAround': true,
       'alwaysShowNavOnTouchDevices': true,
       'showImageNumberLabel': false
-    })
+    });
 
 
 const atr = $('img');
