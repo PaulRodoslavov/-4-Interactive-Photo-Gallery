@@ -29,10 +29,10 @@ $( "#search_words" ).keyup(function() {
 
   	for (let i = 0; i < match.length; i++){
 	  	if (match[i].getAttribute('data-title').toLowerCase().includes(search)) {	
-	  		match[i].style.display = "inline-block";
+	  		match[i].parentNode.style.display = "inline-block";
 	  	}
 	  	else { 
-	  		match[i].style.display = "none";
+	  		match[i].parentNode.style.display = "none";
 	  	}  
   	}
 });
