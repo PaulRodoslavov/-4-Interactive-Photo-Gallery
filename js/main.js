@@ -14,25 +14,26 @@ let div = $("<div>").addClass('olo');
 
 	$('.gallery').append(div); 
 
-const text = $('.olo');	 
+const $text = $('.olo');	 
 
 	for(let i = 0; i < atr.length; i++) {
 		let getAtr = atr[i].getAttribute('alt');
-			text[i].innerHTML = getAtr;
+			$($text[i]).html(getAtr);
 		}
 
 /* Function for instant search ------------ */
 
 $( "#search_words" ).keyup(function() {
- 	const search = $( "#search_words" ).val().toLowerCase();
-	const match = $('.gallery');
+ 	const $search = $( "#search_words" ).val().toLowerCase();
+	const $match = $('.gallery');
 
-  	for (let i = 0; i < match.length; i++){
-	  	if (match[i].getAttribute('data-title').toLowerCase().includes(search)) {	
-	  		match[i].parentNode.style.display = "inline-block";
+  	for (let i = 0; i < $match.length; i++){
+	  	if ($match[i].getAttribute('data-title').toLowerCase().includes($search)) {		  		
+	  		$($match[i]).parent().css("display", "inline-block")
+	  		console.log($match[i]);
 	  	}
 	  	else { 
-	  		match[i].parentNode.style.display = "none";
+	  		$($match[i]).parent().hide();
 	  	}  
   	}
 });
